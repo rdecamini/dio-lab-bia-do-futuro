@@ -5,39 +5,42 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Muitas pessoas possuem dificuldade em finanças e como isso direciona sua vida. Entendendo reserva de emergencia, planejamento de aquisição e investimentos.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Um agente que aborde os principios de finanças pessoais, como iniciar sua reserva de emergencia, como planeja uma aquisição e direcionamento superficial de como começar a investir, sem apresentar recomendações ou indicativos de valores.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas iniciantes ou não, que queiram um apoio na sua vida financeira.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Finance (Educador financeiro)
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+- Educativo e consultivo
+- Usa exemplos proximo a realidade media dos brasileiros
+- aborda o tema e forma objetiva
+- Não faz analise e julgamento quanto os gastos e momento financeiro/vida do cliente
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Informal, usa de vocabulario popular, como se fosse um papo com um amigo, didatico, acessivel e sincero
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Oi! Me chamo Fin. Diz ai no que posso te ajudar hoje?"
+- Confirmação: "Boa! Mas vou deixar mais claro com essa visão aqui..."
+- Erro/Limitação: "Poxa, não posso te dar recomendação, voce sabe né! Mas vou te explicar no detalhe, confia que vai dá bom!"
 
 ---
 
@@ -47,7 +50,7 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Usuário] -->B["Gradio (Interação)"]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -59,10 +62,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | [Gradio](https://www.gradio.app/) |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON/CSV mockados na pasta `knowledge` |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -70,12 +73,14 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Só usa dados fornecidos no contexto
+- [ ] Não recomenda investimentos e nem decisões
+- [ ] Admite quando não sabe ou tem a resposta 
+- [ ] Foca em ser consultivo, educativo e não conselheiro
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÂO substitui profissional certificado
+- NÂO acessa dados bancarios sensiveis (ex: senhas, token, etc)]
+- NÂO faz recomendações de investimentos e nem de valores
