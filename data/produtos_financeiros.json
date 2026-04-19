@@ -38,5 +38,13 @@
     "rentabilidade": "Variável",
     "aporte_minimo": 100.00,
     "indicado_para": "Perfil arrojado com foco no longo prazo"
+  },
+   {
+    "nome": "COE - Amazon",
+    "categoria": "COE",
+    "risco": "alto",
+    "rentabilidade": "Variável",
+    "aporte_minimo": 10000.00,
+    "indicado_para": "Perfil arrojado com foco no longo prazo"
   }
 ]
