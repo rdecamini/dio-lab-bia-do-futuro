@@ -50,7 +50,7 @@ Informal, usa de vocabulario popular, como se fosse um papo com um amigo, didati
 
 ```mermaid
 flowchart TD
-    A[Usuário] -->B["Gradio (Interação)"]
+    A[Usuário] -->B["Streamlit (Interação)"]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -62,7 +62,7 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [Gradio](https://www.gradio.app/) |
+| Interface | [Streamlit](https://streamlit.io/) |
 | LLM | Ollama (local) |
 | Base de Conhecimento | JSON/CSV mockados na pasta `knowledge` |
 | Validação | Checagem de alucinações |
