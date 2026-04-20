@@ -1,149 +1,152 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💰 Finance (Fin) — Agente Financeiro Inteligente
 
-## Contexto
+O **Finance (Fin)** é um agente virtual inteligente focado em educação financeira, desenvolvido com Python, Streamlit e IA generativa.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+O objetivo do projeto é ajudar usuários a entender melhor seus hábitos financeiros, tomar decisões mais conscientes e evoluir sua relação com dinheiro de forma simples, amigável e personalizada.
 
 ---
 
-## O Que Você Deve Entregar
+## 🚀 O que o projeto faz
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+- Explica conceitos financeiros de forma simples  
+- Analisa dados do usuário (perfil, transações e histórico)  
+- Responde dúvidas sobre gastos e investimentos  
+- Atua de forma consultiva, educativa e não prescritiva  
+- Utiliza contexto real para gerar respostas personalizadas  
 
 ---
 
-### 2. Base de Conhecimento
+## 🧠 Diferencial do agente
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+O Fin **não recomenda investimentos diretamente**.
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+Em vez disso, ele:
+- Explica opções disponíveis  
+- Contextualiza com base no perfil do usuário  
+- Incentiva decisões conscientes  
+- Atua como um educador financeiro digital  
 
 ---
 
-### 3. Prompts do Agente
+## 🏗️ Arquitetura do Projeto
 
-Documente os prompts que definem o comportamento do seu agente:
+### Diagrama
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```mermaid
+flowchart TD
+    A[Usuário] -->B["Streamlit (Interação)"]
+    B --> C[LLM]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação]
+    E --> F[Resposta]
 ```
 
+```bash
+📁 src/
+└── app.py
+
+📁 data/
+├── perfil_investidor.json
+├── transacoes.csv
+├── historico_atendimento.csv
+└── produtos_financeiros.json
+
+📁 docs/
+├── 01-documentacao-agente.md
+├── 02-base-conhecimento.md
+└── 03-prompts.md
+```
+
+
 ---
 
-## Dicas Finais
+## 🧩 Como o agente funciona
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+O Fin combina três pilares principais:
+
+### 1. Contexto do usuário
+- Perfil financeiro  
+- Objetivos  
+- Transações  
+- Histórico de atendimento  
+
+### 2. Base de conhecimento
+- Conceitos de educação financeira  
+- Estrutura de produtos financeiros  
+- Regras de interpretação  
+
+### 3. System Prompt
+- Linguagem simples e amigável  
+- Respostas curtas e objetivas  
+- Proibição de recomendação direta  
+- Uso de dados do usuário  
+- Estímulo à continuidade da conversa  
+
+---
+
+## 💬 Exemplos de uso
+
+O agente responde perguntas como:
+
+- “Para onde está indo meu dinheiro?”  
+- “O que é inflação?”  
+- “Quero começar a investir”  
+- “Tenho R$1000, quais opções existem?”  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- Python  
+- Streamlit  
+- Pandas  
+- Requests  
+- Ollama (LLM local)
+
+---
+
+## ▶️ Como rodar
+
+```bash
+# 1. Instalar dependencias
+pip install streamlit pandas requests
+ou
+python -m pip install streamlit pandas requests
+
+# 2. Garantir que o Ollama esta rodando
+ollama serve
+
+# 3. Rodar o app
+streamlit run .\src\app.py
+ou
+python -m streamlit run.\src\app.py
+```
+## Evidencia de Execução
+
+<img width="1920" height="947" alt="image" src="https://github.com/user-attachments/assets/02788cbc-b2a0-4a3a-8457-7fa90a226654" />
+
+---
+
+## 🎯 Objetivo
+
+Projeto desenvolvido para explorar:
+
+- IA Generativa
+- Construção de agentes inteligentes
+- Engenharia de prompt
+- Uso de contexto estruturado
+- Aplicação em finanças pessoais
+  
+---
+
+## 📌 Próximos passos
+- Implementar memória de conversa
+- Evoluir personalização
+- Expandir base de conhecimento
+- Melhorar experiência do usuário
+
+---
+
+## 👨‍💻 Autor
+### Renan Decamini
