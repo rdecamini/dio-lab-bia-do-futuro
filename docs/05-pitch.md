@@ -8,37 +8,40 @@
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
 
-[Sua descrição aqui]
+Muitos brasileiros não possuem reserva de emergência e nem buscam entendimento sobre o tema de finanças pessoais e planejamento patrimonial, por acharem complexo ou precisarem dispor de tempo para entrar em contato com seu gerente ou profissional.
 
 ### 2. A Solução (1 min)
 > Como seu agente resolve esse problema?
 
-[Sua descrição aqui]
+Finance ou Fin, é um “amigo” consultivo e educativo que busca ensinar de forma personalizada e didática. Ele utiliza os próprios dados do usuário, não recomenda investimentos, não julga momento de vida do usuário, é simplesmente um amigo conversando 
 
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
 
-[Descreva o que será mostrado]
+- Pra onde está indo minha grana?
+- Para o meu perfil que tipos de ativos sugeri analisar?
+- O que são COE?
+
 
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-[Sua descrição aqui]
+Diferente de outros similares, o Finance segue seus dados para trazer exemplos, deixando o aprendizado mais didático, além de ser 100% loca, sem custo e sem compartilhar seus dados!
 
 ---
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [X] Duração máxima de 3 minutos
+- [X] Problema claramente definido
+- [X] Solução demonstrada na prática
+- [X] Diferencial explicado
+- [X] Áudio e vídeo com boa qualidade
 
 ---
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+ - https://drive.google.com/file/d/1-ITrp4bf196xFxV0HhAfaVnm-O2VdzEa/view?usp=drive_link
 
-[Link do vídeo]
+
